@@ -10,8 +10,20 @@ import SwiftUI
 @main
 struct ChatGPTToolbarApp: App {
     var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+        MenuBarExtra("UtilityApp", systemImage: "brain") {
+            ZStack {
+                ContentView()
+            }
+            .frame(width: 500, height: 400)
+            
+        }.menuBarExtraStyle(.window)
+        
+            //.keyboardShortcut("7", modifiers: [.command, .shift])
+        
+//            WindowGroup {
+//
+//            }
+//
+          
     }
 }

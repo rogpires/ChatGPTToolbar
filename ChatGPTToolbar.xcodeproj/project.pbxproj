@@ -7,17 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		034525C829CFB42100C57E19 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034525C729CFB42100C57E19 /* SettingsView.swift */; };
 		036CA94929C93AB000F76CCA /* ChatGPTToolbarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036CA94829C93AB000F76CCA /* ChatGPTToolbarApp.swift */; };
 		036CA94B29C93AB000F76CCA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036CA94A29C93AB000F76CCA /* ContentView.swift */; };
-		036CA94D29C93AB200F76CCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 036CA94C29C93AB200F76CCA /* Assets.xcassets */; };
 		036CA95029C93AB200F76CCA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 036CA94F29C93AB200F76CCA /* Preview Assets.xcassets */; };
+		036CA95929C93DD800F76CCA /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 036CA95829C93DD800F76CCA /* OpenAISwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		034525C729CFB42100C57E19 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		036CA94529C93AB000F76CCA /* ChatGPTToolbar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatGPTToolbar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		036CA94829C93AB000F76CCA /* ChatGPTToolbarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTToolbarApp.swift; sourceTree = "<group>"; };
 		036CA94A29C93AB000F76CCA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		036CA94C29C93AB200F76CCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		036CA94F29C93AB200F76CCA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		036CA95129C93AB200F76CCA /* ChatGPTToolbar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ChatGPTToolbar.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				036CA95929C93DD800F76CCA /* OpenAISwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,7 +56,7 @@
 			children = (
 				036CA94829C93AB000F76CCA /* ChatGPTToolbarApp.swift */,
 				036CA94A29C93AB000F76CCA /* ContentView.swift */,
-				036CA94C29C93AB200F76CCA /* Assets.xcassets */,
+				034525C729CFB42100C57E19 /* SettingsView.swift */,
 				036CA95129C93AB200F76CCA /* ChatGPTToolbar.entitlements */,
 				036CA94E29C93AB200F76CCA /* Preview Content */,
 			);
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = ChatGPTToolbar;
+			packageProductDependencies = (
+				036CA95829C93DD800F76CCA /* OpenAISwift */,
+			);
 			productName = ChatGPTToolbar;
 			productReference = 036CA94529C93AB000F76CCA /* ChatGPTToolbar.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +118,9 @@
 				Base,
 			);
 			mainGroup = 036CA93C29C93AB000F76CCA;
+			packageReferences = (
+				036CA95729C93DD800F76CCA /* XCRemoteSwiftPackageReference "OpenAISwift" */,
+			);
 			productRefGroup = 036CA94629C93AB000F76CCA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -128,7 +136,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				036CA95029C93AB200F76CCA /* Preview Assets.xcassets in Resources */,
-				036CA94D29C93AB200F76CCA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				034525C829CFB42100C57E19 /* SettingsView.swift in Sources */,
 				036CA94B29C93AB000F76CCA /* ContentView.swift in Sources */,
 				036CA94929C93AB000F76CCA /* ChatGPTToolbarApp.swift in Sources */,
 			);
@@ -274,6 +282,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -301,6 +310,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -336,6 +346,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		036CA95729C93DD800F76CCA /* XCRemoteSwiftPackageReference "OpenAISwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamrushy/OpenAISwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		036CA95829C93DD800F76CCA /* OpenAISwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 036CA95729C93DD800F76CCA /* XCRemoteSwiftPackageReference "OpenAISwift" */;
+			productName = OpenAISwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 036CA93D29C93AB000F76CCA /* Project object */;
 }
