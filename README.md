@@ -7,4 +7,6 @@ ChatGPTToolbar é uma aplicação para macOS, feito 100% em [SwiftUI](https://de
 
 Follow [@usecontrast](https://twitter.com/usecontrast) for information about Contrast for macOS v2.
 
-[Foto](https://github.com/rogpires/rogpires.github.io/blob/37f1b390001337ceaf40f9ab31d2aa26b911d6c1/ChatGPTToolbar.png)
+
+
+![screenshot](ChatGPTToolbar.png)
