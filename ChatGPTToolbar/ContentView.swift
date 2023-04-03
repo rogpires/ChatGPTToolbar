@@ -13,7 +13,7 @@ struct ContentView: View {
     @State private var search: String = ""
     @State private var isSearching: Bool = false
     
-    let openAI = OpenAISwift(authToken: "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")
+    let openAI = OpenAISwift(authToken: " ")//Your Key
     
     @State private var responses: [String] = []
     
