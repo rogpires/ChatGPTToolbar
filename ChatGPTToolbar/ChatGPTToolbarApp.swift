@@ -6,10 +6,16 @@
 //
 
 import SwiftUI
+import HotKey
 
 @main
 struct ChatGPTToolbarApp: App {
+    
+    var hotKey = HotKey(key: .r, modifiers: [.command, .option])
+    
+    
     var body: some Scene {
+        
         MenuBarExtra("UtilityApp", systemImage: "brain") {
             ZStack {
                 ContentView()
@@ -18,12 +24,9 @@ struct ChatGPTToolbarApp: App {
             
         }.menuBarExtraStyle(.window)
         
-            //.keyboardShortcut("7", modifiers: [.command, .shift])
-        
-//            WindowGroup {
-//
-//            }
-//
+
           
     }
+    
 }
+

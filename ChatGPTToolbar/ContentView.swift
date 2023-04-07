@@ -9,12 +9,14 @@ import SwiftUI
 import OpenAISwift
 
 struct ContentView: View {
-    
+    // "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"
     @State private var search: String = ""
     @State private var isSearching: Bool = false
+    @State private var isShowSettings: Bool = false
+    var key = "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"
     
-    let openAI = OpenAISwift(authToken: "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")
-    
+//    let openAI = OpenAISwift(authToken: "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")
+//    
     @State private var responses: [String] = []
     
     private var isFormValid: Bool {
@@ -24,7 +26,8 @@ struct ContentView: View {
     private func performSearch() {
         responses.append("You: \(search) ")
         
-        openAI.sendCompletion(with: search, maxTokens: 500) { result in
+        OpenAISwift(authToken: key).sendCompletion(with: search, maxTokens: 500){ result in
+//        openAI.sendCompletion(with: search, maxTokens: 500) { result in
             switch result {
             case .success(let success):
                 let response = "ChatGPT: \(success.choices.first?.text ?? "")"
@@ -94,7 +97,19 @@ struct ContentView: View {
                         .frame(maxWidth: .infinity)
                 }.frame(maxWidth: .infinity)
                 
-                
+                Button {
+                  //  viewModel.showingPopover.toggle()
+                    isShowSettings = true
+                } label: {
+                    Image(systemName: "gear")
+                        .resizable()
+                        .frame(width: 15, height: 15)
+                        .clipShape(Circle())
+                }
+              //  .buttonStyle(.plain)
+                .popover(isPresented: $isShowSettings) {
+                    SettingsView()
+                }
                 
                 //                Button {
                 //

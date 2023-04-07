@@ -12,10 +12,12 @@
 		036CA94B29C93AB000F76CCA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036CA94A29C93AB000F76CCA /* ContentView.swift */; };
 		036CA95029C93AB200F76CCA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 036CA94F29C93AB200F76CCA /* Preview Assets.xcassets */; };
 		036CA95929C93DD800F76CCA /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 036CA95829C93DD800F76CCA /* OpenAISwift */; };
+		03CD0DAA29D8F0BC0012E27B /* HotKey in Frameworks */ = {isa = PBXBuildFile; productRef = 03CD0DA929D8F0BC0012E27B /* HotKey */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		034525C729CFB42100C57E19 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		035859D529DB8DE600B579B2 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		036CA94529C93AB000F76CCA /* ChatGPTToolbar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatGPTToolbar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		036CA94829C93AB000F76CCA /* ChatGPTToolbarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTToolbarApp.swift; sourceTree = "<group>"; };
 		036CA94A29C93AB000F76CCA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -28,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03CD0DAA29D8F0BC0012E27B /* HotKey in Frameworks */,
 				036CA95929C93DD800F76CCA /* OpenAISwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -38,6 +41,7 @@
 		036CA93C29C93AB000F76CCA = {
 			isa = PBXGroup;
 			children = (
+				035859D529DB8DE600B579B2 /* README.md */,
 				036CA94729C93AB000F76CCA /* ChatGPTToolbar */,
 				036CA94629C93AB000F76CCA /* Products */,
 			);
@@ -89,6 +93,7 @@
 			name = ChatGPTToolbar;
 			packageProductDependencies = (
 				036CA95829C93DD800F76CCA /* OpenAISwift */,
+				03CD0DA929D8F0BC0012E27B /* HotKey */,
 			);
 			productName = ChatGPTToolbar;
 			productReference = 036CA94529C93AB000F76CCA /* ChatGPTToolbar.app */;
@@ -120,6 +125,7 @@
 			mainGroup = 036CA93C29C93AB000F76CCA;
 			packageReferences = (
 				036CA95729C93DD800F76CCA /* XCRemoteSwiftPackageReference "OpenAISwift" */,
+				03CD0DA829D8F0BC0012E27B /* XCRemoteSwiftPackageReference "HotKey" */,
 			);
 			productRefGroup = 036CA94629C93AB000F76CCA /* Products */;
 			projectDirPath = "";
@@ -356,6 +362,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		03CD0DA829D8F0BC0012E27B /* XCRemoteSwiftPackageReference "HotKey" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/soffes/HotKey";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -363,6 +377,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 036CA95729C93DD800F76CCA /* XCRemoteSwiftPackageReference "OpenAISwift" */;
 			productName = OpenAISwift;
+		};
+		03CD0DA929D8F0BC0012E27B /* HotKey */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03CD0DA829D8F0BC0012E27B /* XCRemoteSwiftPackageReference "HotKey" */;
+			productName = HotKey;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
