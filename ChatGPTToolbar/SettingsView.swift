@@ -9,9 +9,9 @@ import SwiftUI
 
 struct SettingsView: View {
     
-   // @State private var apikey = ""
     @AppStorage("apikey") var apikey = ""
     @State var api = ""
+    
     
     var body: some View {
         ZStack {
@@ -23,8 +23,6 @@ struct SettingsView: View {
                         .textFieldStyle(.roundedBorder)
                         .background(Material.ultraThin)
                     
-                   
-                    
                     Button ("Salvar") {
                         save()
                     }
@@ -33,17 +31,19 @@ struct SettingsView: View {
                 }
                 
                 Spacer()
+                
                 Label(apikey, systemImage: "link")
                 Section(header: Text("")){
                     Text("Copyright @ 2023 - Rogerio Pires")
                         .font(.caption)
                 }
             }.padding()
-           
+            
         }
         .frame(width: 440, height: 340)
     }
     
+    ///func save 
     func save() {
         apikey = api
         

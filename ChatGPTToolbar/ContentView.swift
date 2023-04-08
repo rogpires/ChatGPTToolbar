@@ -9,14 +9,13 @@ import SwiftUI
 import OpenAISwift
 
 struct ContentView: View {
-    // "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"
+    
     @State private var search: String = ""
     @State private var isSearching: Bool = false
     @State private var isShowSettings: Bool = false
     var key = "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"
     
-//    let openAI = OpenAISwift(authToken: "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")
-//    
+    
     @State private var responses: [String] = []
     
     private var isFormValid: Bool {
@@ -27,7 +26,7 @@ struct ContentView: View {
         responses.append("You: \(search) ")
         
         OpenAISwift(authToken: key).sendCompletion(with: search, maxTokens: 500){ result in
-//        openAI.sendCompletion(with: search, maxTokens: 500) { result in
+            
             switch result {
             case .success(let success):
                 let response = "ChatGPT: \(success.choices.first?.text ?? "")"
@@ -52,6 +51,7 @@ struct ContentView: View {
                 TextField("Search...", text: $search)
                     .textFieldStyle(.roundedBorder)
                 
+                ///Button Search
                 Button {
                     performSearch()
                     isSearching = true
@@ -66,15 +66,13 @@ struct ContentView: View {
             }
             
             
-            
+            ///Scrool Results
             ScrollView {
                 List(responses, id: \.self) { response in
                     Text(response)
                 }.listStyle(.plain)
                     .textSelection(.enabled)
             }
-            //   .padding()
-            
             .overlay(alignment: .center) {
                 if isSearching {
                     ProgressView("Searching...")
@@ -83,6 +81,7 @@ struct ContentView: View {
             
             HStack {
                 
+                ///Button Clear
                 Button(action: {
                     self.responses.removeAll()
                 }) {
@@ -90,6 +89,7 @@ struct ContentView: View {
                         .frame(maxWidth: .infinity)
                 }.frame(maxWidth: .infinity)
                 
+                ///Button quit
                 Button(action: {
                     NSApplication.shared.terminate(self)
                 }) {
@@ -97,8 +97,8 @@ struct ContentView: View {
                         .frame(maxWidth: .infinity)
                 }.frame(maxWidth: .infinity)
                 
+                ///Button Settings
                 Button {
-                  //  viewModel.showingPopover.toggle()
                     isShowSettings = true
                 } label: {
                     Image(systemName: "gear")
@@ -106,24 +106,15 @@ struct ContentView: View {
                         .frame(width: 15, height: 15)
                         .clipShape(Circle())
                 }
-              //  .buttonStyle(.plain)
                 .popover(isPresented: $isShowSettings) {
                     SettingsView()
                 }
                 
-                //                Button {
-                //
-                //                } label: {
-                //                    Image(systemName: "gear")
-                //                        .font(.title)
-                //                }.buttonStyle(.borderless)
-                //                    .disabled(!isFormValid)
-                
             }
             
-                Text("@rogeriocpires @irmandadeSwift")
-                    .foregroundColor(.secondary)
-
+            Text("@rogeriocpires @irmandadeSwift")
+                .foregroundColor(.secondary)
+            
         }
         .padding()
         

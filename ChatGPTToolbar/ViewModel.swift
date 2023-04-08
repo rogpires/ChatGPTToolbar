@@ -1,20 +1,24 @@
 //
-//  SettingsViewModel.swift
+//  ViewModel.swift
 //  ChatGPTToolbar
 //
 //  Created by Rogerio Pires on 07/04/23.
 //
 
 import Foundation
+import SwiftUI
 
-class ViewModel: ObservableObject {
+@MainActor
+final class ViewModel: ObservableObject{
+    @Published var apikey: String
+    @Published var api: String
     
-   
-    @Published private(set) var apikey = ""
-    @Published private(set) var api = ""
+    init(apikey: String, api: String){
+        self.apikey = apikey
+        self.api = api
+    }
     
     func save() {
         apikey = api
-        
     }
 }
