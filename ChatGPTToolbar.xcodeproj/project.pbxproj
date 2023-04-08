@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		032D6B9929E0F6A900A3BB6A /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032D6B9829E0F6A900A3BB6A /* ViewModel.swift */; };
 		034525C829CFB42100C57E19 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034525C729CFB42100C57E19 /* SettingsView.swift */; };
 		036CA94929C93AB000F76CCA /* ChatGPTToolbarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036CA94829C93AB000F76CCA /* ChatGPTToolbarApp.swift */; };
 		036CA94B29C93AB000F76CCA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036CA94A29C93AB000F76CCA /* ContentView.swift */; };
@@ -17,7 +16,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		032D6B9829E0F6A900A3BB6A /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		034525C729CFB42100C57E19 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		035859D529DB8DE600B579B2 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		036CA94529C93AB000F76CCA /* ChatGPTToolbar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatGPTToolbar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,7 +61,6 @@
 				036CA94829C93AB000F76CCA /* ChatGPTToolbarApp.swift */,
 				036CA94A29C93AB000F76CCA /* ContentView.swift */,
 				034525C729CFB42100C57E19 /* SettingsView.swift */,
-				032D6B9829E0F6A900A3BB6A /* ViewModel.swift */,
 				036CA95129C93AB200F76CCA /* ChatGPTToolbar.entitlements */,
 				036CA94E29C93AB200F76CCA /* Preview Content */,
 			);
@@ -157,7 +154,6 @@
 			files = (
 				034525C829CFB42100C57E19 /* SettingsView.swift in Sources */,
 				036CA94B29C93AB000F76CCA /* ContentView.swift in Sources */,
-				032D6B9929E0F6A900A3BB6A /* ViewModel.swift in Sources */,
 				036CA94929C93AB000F76CCA /* ChatGPTToolbarApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
