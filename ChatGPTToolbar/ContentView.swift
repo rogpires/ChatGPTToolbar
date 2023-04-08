@@ -10,12 +10,10 @@ import OpenAISwift
 
 struct ContentView: View {
     
+    @State var vm = SettingsView()
     @State private var search: String = ""
     @State private var isSearching: Bool = false
     @State private var isShowSettings: Bool = false
-    var key = "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"
-    
-    
     @State private var responses: [String] = []
     
     private var isFormValid: Bool {
@@ -25,7 +23,7 @@ struct ContentView: View {
     private func performSearch() {
         responses.append("You: \(search) ")
         
-        OpenAISwift(authToken: key).sendCompletion(with: search, maxTokens: 500){ result in
+        OpenAISwift(authToken: vm.apikey).sendCompletion(with: search, maxTokens: 500){ result in
             
             switch result {
             case .success(let success):
@@ -111,10 +109,10 @@ struct ContentView: View {
                 }
                 
             }
-            
-            Text("@rogeriocpires @irmandadeSwift")
-                .foregroundColor(.secondary)
-            
+//            Image("irmandade")
+//                .resizable()
+//                .frame(width: 480, height: 100)
+//                .cornerRadius(10)
         }
         .padding()
         

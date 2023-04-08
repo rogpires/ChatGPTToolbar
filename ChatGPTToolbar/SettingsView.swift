@@ -16,12 +16,11 @@ struct SettingsView: View {
     var body: some View {
         ZStack {
             VStack (alignment: .leading) {
-                Label("Inserir a API KEY:", systemImage: "link")
+                Label("Insert API KEY:", systemImage: "key")
                 HStack {
                     
                     TextField("APIKEY...", text: $api)
                         .textFieldStyle(.roundedBorder)
-                        .background(Material.ultraThin)
                     
                     Button ("Salvar") {
                         save()
@@ -32,15 +31,17 @@ struct SettingsView: View {
                 
                 Spacer()
                 
-                Label(apikey, systemImage: "link")
+                Label(apikey, systemImage: "key")
+                    .padding()
                 Section(header: Text("")){
-                    Text("Copyright @ 2023 - Rogerio Pires")
+                    Text("ChatGPT API KEY: https://platform.openai.com/")
+                    Text("Copyright @ 2023 - Rogerio Pires | www.irmandadeswift.com")
                         .font(.caption)
                 }
             }.padding()
             
         }
-        .frame(width: 440, height: 340)
+        .frame(width: 400, height: 300)
     }
     
     ///func save 
