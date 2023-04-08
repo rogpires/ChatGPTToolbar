@@ -36,9 +36,7 @@ struct ContentView: View {
             case .failure(let failure):
                 print(failure.localizedDescription)
                 isSearching = false
-                
-                
-                
+               
             }
         }
     }
