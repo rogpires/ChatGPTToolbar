@@ -32,12 +32,14 @@ struct SettingsView: View {
                 Spacer()
                 
                 Label(apikey, systemImage: "key")
-                    .padding()
+                    .lineLimit(1)
+                    .padding(2)
+                
                 Section(header: Text("")){
                     Text("ChatGPT API KEY: https://platform.openai.com/")
                     Text("Copyright @ 2023 - Rogerio Pires | www.irmandadeswift.com")
-                        .font(.caption)
                 }
+                .font(.caption)
             }.padding()
             
         }

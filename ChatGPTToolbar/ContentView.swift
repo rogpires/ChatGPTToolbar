@@ -84,6 +84,7 @@ struct ContentView: View {
                     Text("Clear")
                         .frame(maxWidth: .infinity)
                 }.frame(maxWidth: .infinity)
+                    .controlSize(.large)
                 
                 ///Button quit
                 Button(action: {
@@ -92,6 +93,7 @@ struct ContentView: View {
                     Text("Quit")
                         .frame(maxWidth: .infinity)
                 }.frame(maxWidth: .infinity)
+                    .controlSize(.large)
                 
                 ///Button Settings
                 Button {
@@ -99,9 +101,10 @@ struct ContentView: View {
                 } label: {
                     Image(systemName: "gear")
                         .resizable()
-                        .frame(width: 15, height: 15)
+                        .frame(width: 17, height: 17)
                         .clipShape(Circle())
                 }
+                .controlSize(.large)
                 .popover(isPresented: $isShowSettings) {
                     SettingsView()
                 }
