@@ -10,8 +10,9 @@
 		034525C829CFB42100C57E19 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034525C729CFB42100C57E19 /* SettingsView.swift */; };
 		036CA94929C93AB000F76CCA /* ChatGPTToolbarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036CA94829C93AB000F76CCA /* ChatGPTToolbarApp.swift */; };
 		036CA94B29C93AB000F76CCA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036CA94A29C93AB000F76CCA /* ContentView.swift */; };
-		036CA95029C93AB200F76CCA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 036CA94F29C93AB200F76CCA /* Preview Assets.xcassets */; };
 		036CA95929C93DD800F76CCA /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 036CA95829C93DD800F76CCA /* OpenAISwift */; };
+		03B1EDB029E7686B00E7DD52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03B1EDAF29E7686B00E7DD52 /* Assets.xcassets */; };
+		03B4AD3929E72C6A002CB049 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03B4AD3829E72C6A002CB049 /* Preview Assets.xcassets */; };
 		03CD0DAA29D8F0BC0012E27B /* HotKey in Frameworks */ = {isa = PBXBuildFile; productRef = 03CD0DA929D8F0BC0012E27B /* HotKey */; };
 /* End PBXBuildFile section */
 
@@ -21,8 +22,9 @@
 		036CA94529C93AB000F76CCA /* ChatGPTToolbar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatGPTToolbar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		036CA94829C93AB000F76CCA /* ChatGPTToolbarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTToolbarApp.swift; sourceTree = "<group>"; };
 		036CA94A29C93AB000F76CCA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		036CA94F29C93AB200F76CCA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		036CA95129C93AB200F76CCA /* ChatGPTToolbar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ChatGPTToolbar.entitlements; sourceTree = "<group>"; };
+		03B1EDAF29E7686B00E7DD52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03B4AD3829E72C6A002CB049 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				036CA94829C93AB000F76CCA /* ChatGPTToolbarApp.swift */,
 				036CA94A29C93AB000F76CCA /* ContentView.swift */,
 				034525C729CFB42100C57E19 /* SettingsView.swift */,
+				03B1EDAF29E7686B00E7DD52 /* Assets.xcassets */,
 				036CA95129C93AB200F76CCA /* ChatGPTToolbar.entitlements */,
 				036CA94E29C93AB200F76CCA /* Preview Content */,
 			);
@@ -70,7 +73,7 @@
 		036CA94E29C93AB200F76CCA /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				036CA94F29C93AB200F76CCA /* Preview Assets.xcassets */,
+				03B4AD3829E72C6A002CB049 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -141,7 +144,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				036CA95029C93AB200F76CCA /* Preview Assets.xcassets in Resources */,
+				03B1EDB029E7686B00E7DD52 /* Assets.xcassets in Resources */,
+				03B4AD3929E72C6A002CB049 /* Preview Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,15 +283,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = ChatGPTToolbar/ChatGPTToolbar.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ChatGPTToolbar/Preview Content\"";
-				DEVELOPMENT_TEAM = 82CYP6YDK3;
+				DEVELOPMENT_TEAM = 3UW7P394BZ;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ChatGPTToolbar;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -307,15 +315,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = ChatGPTToolbar/ChatGPTToolbar.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ChatGPTToolbar/Preview Content\"";
-				DEVELOPMENT_TEAM = 82CYP6YDK3;
+				DEVELOPMENT_TEAM = 3UW7P394BZ;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ChatGPTToolbar;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
