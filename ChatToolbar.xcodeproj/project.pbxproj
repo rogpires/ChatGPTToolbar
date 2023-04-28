@@ -19,7 +19,7 @@
 /* Begin PBXFileReference section */
 		034525C729CFB42100C57E19 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		035859D529DB8DE600B579B2 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		036CA94529C93AB000F76CCA /* ChatGPTToolbar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatGPTToolbar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		036CA94529C93AB000F76CCA /* ChatToolbar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatToolbar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		036CA94829C93AB000F76CCA /* ChatGPTToolbarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTToolbarApp.swift; sourceTree = "<group>"; };
 		036CA94A29C93AB000F76CCA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		036CA95129C93AB200F76CCA /* ChatGPTToolbar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ChatGPTToolbar.entitlements; sourceTree = "<group>"; };
@@ -52,7 +52,7 @@
 		036CA94629C93AB000F76CCA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				036CA94529C93AB000F76CCA /* ChatGPTToolbar.app */,
+				036CA94529C93AB000F76CCA /* ChatToolbar.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,9 +81,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		036CA94429C93AB000F76CCA /* ChatGPTToolbar */ = {
+		036CA94429C93AB000F76CCA /* ChatToolbar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 036CA95429C93AB200F76CCA /* Build configuration list for PBXNativeTarget "ChatGPTToolbar" */;
+			buildConfigurationList = 036CA95429C93AB200F76CCA /* Build configuration list for PBXNativeTarget "ChatToolbar" */;
 			buildPhases = (
 				036CA94129C93AB000F76CCA /* Sources */,
 				036CA94229C93AB000F76CCA /* Frameworks */,
@@ -93,13 +93,13 @@
 			);
 			dependencies = (
 			);
-			name = ChatGPTToolbar;
+			name = ChatToolbar;
 			packageProductDependencies = (
 				036CA95829C93DD800F76CCA /* OpenAISwift */,
 				03CD0DA929D8F0BC0012E27B /* HotKey */,
 			);
 			productName = ChatGPTToolbar;
-			productReference = 036CA94529C93AB000F76CCA /* ChatGPTToolbar.app */;
+			productReference = 036CA94529C93AB000F76CCA /* ChatToolbar.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -117,7 +117,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 036CA94029C93AB000F76CCA /* Build configuration list for PBXProject "ChatGPTToolbar" */;
+			buildConfigurationList = 036CA94029C93AB000F76CCA /* Build configuration list for PBXProject "ChatToolbar" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -134,7 +134,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				036CA94429C93AB000F76CCA /* ChatGPTToolbar */,
+				036CA94429C93AB000F76CCA /* ChatToolbar */,
 			);
 		};
 /* End PBXProject section */
@@ -294,7 +294,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = ChatGPTToolbar;
+				INFOPLIST_KEY_CFBundleDisplayName = ChatToolbar;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -326,7 +326,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = ChatGPTToolbar;
+				INFOPLIST_KEY_CFBundleDisplayName = ChatToolbar;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -345,7 +345,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		036CA94029C93AB000F76CCA /* Build configuration list for PBXProject "ChatGPTToolbar" */ = {
+		036CA94029C93AB000F76CCA /* Build configuration list for PBXProject "ChatToolbar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				036CA95229C93AB200F76CCA /* Debug */,
@@ -354,7 +354,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		036CA95429C93AB200F76CCA /* Build configuration list for PBXNativeTarget "ChatGPTToolbar" */ = {
+		036CA95429C93AB200F76CCA /* Build configuration list for PBXNativeTarget "ChatToolbar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				036CA95529C93AB200F76CCA /* Debug */,
