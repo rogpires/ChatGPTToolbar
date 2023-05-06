@@ -85,6 +85,7 @@ struct ContentView: View {
                         .frame(maxWidth: .infinity)
                 }.frame(maxWidth: .infinity)
                     .controlSize(.large)
+                    .foregroundColor(.primary)
                 
                 ///Button quit
                 Button(action: {
@@ -94,6 +95,7 @@ struct ContentView: View {
                         .frame(maxWidth: .infinity)
                 }.frame(maxWidth: .infinity)
                     .controlSize(.large)
+                    .foregroundColor(.primary)
                 
                 ///Button Settings
                 Button {
@@ -103,6 +105,7 @@ struct ContentView: View {
                         .resizable()
                         .frame(width: 17, height: 17)
                         .clipShape(Circle())
+                        .foregroundColor(.primary)
                 }
                 .controlSize(.large)
                 .popover(isPresented: $isShowSettings) {

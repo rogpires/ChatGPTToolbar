@@ -13,3 +13,4 @@ E a nossa querida [irmandadeSwift](https://www.irmandadeswift.com/)
 
 
 ![screenshot](ChatGPTToolbar.png)
+$(CURRENT_PROJECT_VERSION)
